@@ -1,0 +1,84 @@
+{
+  "playerHand": [
+    {
+      "Suit": 1,
+      "Rank": 14,
+      "IsTrump": true,
+      "ImagePath": "/Assets/Cards/ace_of_diamonds.png"
+    },
+    {
+      "Suit": 0,
+      "Rank": 10,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/10_of_hearts.png"
+    },
+    {
+      "Suit": 3,
+      "Rank": 7,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/7_of_spades.png"
+    },
+    {
+      "Suit": 1,
+      "Rank": 10,
+      "IsTrump": true,
+      "ImagePath": "/Assets/Cards/10_of_diamonds.png"
+    },
+    {
+      "Suit": 0,
+      "Rank": 9,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/9_of_hearts.png"
+    },
+    {
+      "Suit": 1,
+      "Rank": 12,
+      "IsTrump": true,
+      "ImagePath": "/Assets/Cards/queen_of_diamonds.png"
+    }
+  ],
+  "aiHand": [
+    {
+      "Suit": 3,
+      "Rank": 6,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/6_of_spades.png"
+    },
+    {
+      "Suit": 1,
+      "Rank": 9,
+      "IsTrump": true,
+      "ImagePath": "/Assets/Cards/9_of_diamonds.png"
+    },
+    {
+      "Suit": 2,
+      "Rank": 14,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/ace_of_clubs.png"
+    },
+    {
+      "Suit": 2,
+      "Rank": 9,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/9_of_clubs.png"
+    },
+    {
+      "Suit": 3,
+      "Rank": 14,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/ace_of_spades.png"
+    },
+    {
+      "Suit": 3,
+      "Rank": 12,
+      "IsTrump": false,
+      "ImagePath": "/Assets/Cards/queen_of_spades.png"
+    }
+  ],
+  "trump": {
+    "Suit": 1,
+    "Rank": 14,
+    "IsTrump": true,
+    "ImagePath": "/Assets/Cards/ace_of_diamonds.png"
+  }
+}

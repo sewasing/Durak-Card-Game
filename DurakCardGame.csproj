@@ -1,0 +1,291 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Cards\10_of_clubs.png" />
+    <None Remove="Assets\Cards\10_of_diamonds.png" />
+    <None Remove="Assets\Cards\10_of_hearts.png" />
+    <None Remove="Assets\Cards\10_of_spades.png" />
+    <None Remove="Assets\Cards\2_of_clubs.png" />
+    <None Remove="Assets\Cards\2_of_diamonds.png" />
+    <None Remove="Assets\Cards\2_of_hearts.png" />
+    <None Remove="Assets\Cards\2_of_spades.png" />
+    <None Remove="Assets\Cards\3_of_clubs.png" />
+    <None Remove="Assets\Cards\3_of_diamonds.png" />
+    <None Remove="Assets\Cards\3_of_hearts.png" />
+    <None Remove="Assets\Cards\3_of_spades.png" />
+    <None Remove="Assets\Cards\4_of_clubs.png" />
+    <None Remove="Assets\Cards\4_of_diamonds.png" />
+    <None Remove="Assets\Cards\4_of_hearts.png" />
+    <None Remove="Assets\Cards\4_of_spades.png" />
+    <None Remove="Assets\Cards\5_of_clubs.png" />
+    <None Remove="Assets\Cards\5_of_diamonds.png" />
+    <None Remove="Assets\Cards\5_of_hearts.png" />
+    <None Remove="Assets\Cards\5_of_spades.png" />
+    <None Remove="Assets\Cards\6_of_clubs.png" />
+    <None Remove="Assets\Cards\6_of_diamonds.png" />
+    <None Remove="Assets\Cards\6_of_hearts.png" />
+    <None Remove="Assets\Cards\6_of_spades.png" />
+    <None Remove="Assets\Cards\7_of_clubs.png" />
+    <None Remove="Assets\Cards\7_of_diamonds.png" />
+    <None Remove="Assets\Cards\7_of_hearts.png" />
+    <None Remove="Assets\Cards\7_of_spades.png" />
+    <None Remove="Assets\Cards\8_of_clubs.png" />
+    <None Remove="Assets\Cards\8_of_diamonds.png" />
+    <None Remove="Assets\Cards\8_of_hearts.png" />
+    <None Remove="Assets\Cards\8_of_spades.png" />
+    <None Remove="Assets\Cards\9_of_clubs.png" />
+    <None Remove="Assets\Cards\9_of_diamonds.png" />
+    <None Remove="Assets\Cards\9_of_hearts.png" />
+    <None Remove="Assets\Cards\9_of_spades.png" />
+    <None Remove="Assets\Cards\ace_of_clubs.png" />
+    <None Remove="Assets\Cards\ace_of_diamonds.png" />
+    <None Remove="Assets\Cards\ace_of_hearts.png" />
+    <None Remove="Assets\Cards\ace_of_spades.png" />
+    <None Remove="Assets\Cards\ace_of_spades2.png" />
+    <None Remove="Assets\Cards\black_joker.png" />
+    <None Remove="Assets\Cards\jack_of_clubs.png" />
+    <None Remove="Assets\Cards\jack_of_clubs2.png" />
+    <None Remove="Assets\Cards\jack_of_diamonds.png" />
+    <None Remove="Assets\Cards\jack_of_diamonds2.png" />
+    <None Remove="Assets\Cards\jack_of_hearts.png" />
+    <None Remove="Assets\Cards\jack_of_hearts2.png" />
+    <None Remove="Assets\Cards\jack_of_spades.png" />
+    <None Remove="Assets\Cards\jack_of_spades2.png" />
+    <None Remove="Assets\Cards\king_of_clubs.png" />
+    <None Remove="Assets\Cards\king_of_clubs2.png" />
+    <None Remove="Assets\Cards\king_of_diamonds.png" />
+    <None Remove="Assets\Cards\king_of_diamonds2.png" />
+    <None Remove="Assets\Cards\king_of_hearts.png" />
+    <None Remove="Assets\Cards\king_of_hearts2.png" />
+    <None Remove="Assets\Cards\king_of_spades.png" />
+    <None Remove="Assets\Cards\king_of_spades2.png" />
+    <None Remove="Assets\Cards\queen_of_clubs.png" />
+    <None Remove="Assets\Cards\queen_of_clubs2.png" />
+    <None Remove="Assets\Cards\queen_of_diamonds.png" />
+    <None Remove="Assets\Cards\queen_of_diamonds2.png" />
+    <None Remove="Assets\Cards\queen_of_hearts.png" />
+    <None Remove="Assets\Cards\queen_of_hearts2.png" />
+    <None Remove="Assets\Cards\queen_of_spades.png" />
+    <None Remove="Assets\Cards\queen_of_spades2.png" />
+    <None Remove="Assets\Cards\red_joker.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Cards\10_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\10_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\10_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\10_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\2_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\2_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\2_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\2_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\3_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\3_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\3_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\3_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\4_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\4_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\4_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\4_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\5_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\5_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\5_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\5_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\6_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\6_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\6_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\6_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\7_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\7_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\7_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\7_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\8_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\8_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\8_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\8_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\9_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\9_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\9_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\9_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\ace_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\ace_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\ace_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\ace_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\ace_of_spades2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\black_joker.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_clubs2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_diamonds2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_hearts2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\jack_of_spades2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_clubs2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_diamonds2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_hearts2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\king_of_spades2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_clubs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_clubs2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_diamonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_diamonds2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_hearts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_hearts2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_spades.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\queen_of_spades2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\red_joker.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

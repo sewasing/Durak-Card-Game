@@ -1,0 +1,62 @@
+﻿<Window x:Class="DurakCardGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Durak Game" Height="550" Width="800">
+
+    <!-- Horizontal layout template for card display -->
+    <Window.Resources>
+        <ItemsPanelTemplate x:Key="HorizontalItemsPanel">
+            <StackPanel Orientation="Horizontal"/>
+        </ItemsPanelTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Trump card display -->
+        <TextBlock x:Name="TrumpCardText" FontSize="18" Margin="10,10,0,0"/>
+
+        <!-- Player's Hand -->
+        <TextBlock Text="Your Cards:" FontWeight="Bold" Margin="10,40,0,0"/>
+        <ListBox x:Name="PlayerList"
+                 Height="100"
+                 Margin="10,70,10,0"
+                 SelectionMode="Single"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                 ItemsPanel="{StaticResource HorizontalItemsPanel}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <!-- Show actual card face -->
+                    <Image Width="70" Height="100" Source="{Binding ImagePath}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- AI's Hand (hidden cards) -->
+        <TextBlock Text="AI Cards:" FontWeight="Bold" Margin="10,180,0,0"/>
+        <ListBox x:Name="AIList"
+                 Height="100"
+                 Margin="10,210,10,0"
+                 IsEnabled="False"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                 ItemsPanel="{StaticResource HorizontalItemsPanel}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <!-- Always show back.png -->
+                    <Image Width="70" Height="100" Source="/Assets/Cards/back.png" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- Action Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20">
+            <Button Content="New Game" Width="100" Margin="10" Click="NewGame_Click"/>
+            <Button Content="Pause" Width="100" Margin="10" Click="PauseGame_Click"/>
+            <Button Content="End Game" Width="100" Margin="10" Click="EndGame_Click"/>
+            <Button Content="Attack" Width="100" Margin="10" Click="Attack_Click"/>
+            <Button Content="Save Game" Width="100" Margin="10" Click="Save_Click"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
